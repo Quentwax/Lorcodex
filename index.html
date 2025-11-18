@@ -1,0 +1,137 @@
+<!DOCTYPE htlm>
+<html>
+<head>
+<lang="fr">
+<title>Lorcodex - Codex Lorcana</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+ <link href="style.css" rel="stylesheet" />
+ <style>
+  body {
+  background-image: url("Lorcanabackground.png");
+  background-size: cover;
+}
+</style>
+
+
+   </head>
+<body>
+
+<div class="header">
+  <span class="titre">LorCodex</span>
+
+</div>
+
+<style>
+.header {
+  display: flex;
+  align-items: center;
+  background: #7b0d0d;
+  padding: 5px 10px;
+  color: white;
+}
+.titre {
+  flex: 1;
+  font-weight: bold;
+}
+
+</style>
+
+
+   <h1 class="titre">Entrez dans l'univers Lorcana</h1>
+ 
+<style>
+.titre {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: bold;
+  text-align: center;
+}
+</style>
+
+<div id="carousel">																												<!-- Carrousel -->
+    <img id="image" src="carte-promotionnelle-zootopie-2.png" alt="Image du carrousel" height="60%" width="auto">
+</div>
+
+<button onclick="previousImage()"> Actualité précédente</button>
+<button onclick="nextImage()"> Actualité suivante</button>
+
+<style>
+body {
+    text-align: center;
+	font-size: 10%
+}
+</style>
+
+
+
+
+<script>
+    // Liste des images
+    const images = [
+        "carte-promotionnelle-zootopie-2.png",
+        "wildsunknown.png",
+        "terresdencres.png"
+    ];
+
+    let index = 0;
+
+    function nextImage() {
+        index = (index + 1) % images.length;
+        document.getElementById("image").src = images[index];
+    }
+	function previousImage() {
+        index = (index -	 1) 
+		if (index <0){index = images.length-1;}
+		index = index % images.length;
+        document.getElementById("image").src = images[index];
+    }
+</script>
+
+
+<style>
+/* Disposition des boutons */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;            
+  margin: 20px;
+}
+
+/* Boutons */
+.menu-bouton {
+  flex: 1;              
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+}
+
+.menu-bouton:hover {
+  background-color: #a81b1b;
+}
+</style>
+
+<!-- Boutons -->
+<div class="menu-container">
+  <a class="menu-bouton" href="chapitre_1.html">Premier Chapitre</a>
+  <a class="menu-bouton" href="chapitre_2.html">L'ascension des Floodborn</a>
+  <a class="menu-bouton" href="chapitre_3.html">Les Terres d'Encre</a>
+  <a class="menu-bouton" href="chapitre_4.html">Le retour d'Ursula</a>
+</div>
+
+
+
+
+</body>
+
+<footer>
+<p style="font-size: 75%;">Lorcana est une licence appartenant à ®Ravensburger et ®Disney</p>
+<img style="width: 20%;" src="lorcanalogo.png" alt="Logo Lorcana">
+
+</footer>
+
+
+</html>
