@@ -3,23 +3,54 @@ body {
     display: flex;
 }
 
-.btn {
-    width: 25%;
-    height: 200px;
-    color: white;           /* couleur du texte */
+#carousel {
+    width: 100%;
+    max-width: 85%;     /* largeur max */
+    height: 75%;        /* hauteur FIXE */
+    margin: 0 auto;
+    overflow: hidden;     /* cache les débordements */
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
+    align-items: center;  /* centre l’image */
 }
 
-/* Backgrounds différents */
-.btn1 { background: url('premierchapitre.png') center/cover; }
-.btn2 { background: url('bg2.jpg') center/cover; }
-.btn3 { background: url('bg3.jpg') center/cover; }
-.btn4 { background: url('bg4.jpg') center/cover; }
+#carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* garde une image propre sans déformation */
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+/* Disposition des boutons */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;            
+  margin: 20px;
+}
+
+/* Boutons */
+.menu-bouton {
+  flex: 1;              
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+}
+
+.menu-bouton:hover {
+  background-color: #a81b1b;
+}
 
 }
 footer {
