@@ -106,4 +106,15 @@ footer {
   align-items: center;
 }
 
+.regles {
+    height: 90%;       /* Très important */
+    display: flex;
+}
+
+.regles embed {
+    flex: 1;
+    width: 90%;
+    height: 100%;       /* Force l’embed à occuper toute la hauteur */
+    border: none;
+}
 
