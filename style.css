@@ -84,6 +84,7 @@ footer {
 .cartes {
   display: inline-block;
   margin: 30px 5;
+
 }
 
 .filter-bar {
@@ -99,6 +100,7 @@ footer {
   background: #7b0d0d;
   color: white;
   justify-content: center;
+  font-size : 125%;
 }
 .titre {
   flex: 1;
@@ -107,7 +109,7 @@ footer {
 }
 
 .regles {
-    height: 90%;       /* Très important */
+    height: 85%;       /* Très important */
     display: flex;
 }
 
@@ -118,3 +120,196 @@ footer {
     border: none;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d0f16;
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    color: black;
+    text-shadow: 0 0 10px #f5d37c;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.player-card {
+    background: linear-gradient(135deg, #1b1e2b, #0d0f16);
+    padding: 20px;
+    width: 280px;
+    border: 2px solid #f5d37c;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(245, 211, 124, 0.4);
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    background: conic-gradient(#f5d37c calc(var(--percent)*1%), #444 calc(var(--percent)*1%));
+    transition: background 0.3s ease;
+    border: 4px solid #f5d37c;
+}
+
+.btns {
+    margin-top: 15px;
+}
+
+button {
+    background: #dbb249;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ffe7b0;
+    transform: scale(1.05);
+}
+
+.reset-btn {
+    background: #d9534f;
+}
+
+.reset-btn:hover {
+    background: #ff7777;
+}
+
+.reset-all {
+    background: #ff4d4d;
+    margin-top: 30px;
+}
+
+.reset-all:hover {
+    background: #ff7777;
+}
+
+
+.btn-officiel {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background: #f3d89d;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.btn-officiel:hover {
+    background: #e0cc96;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espace parfaitement ajusté */
+}
+
+.galerie img {
+    width: calc(20% - 10px); /* 5 par ligne */
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.player {
+    text-align: center;
+    padding: 20px;
+    font-family: LorcanaFont, sans-serif;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.score-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 70px;
+    color: #c5a158;
+    font-weight: bold;
+}
+
+.score-box button {
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.top-bar {
+    text-align: right;
+    padding: 15px;
+}
+
+.flip-button {
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
+
+.boxcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 80%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.box p {
+    margin: 2% 0;
+    font-size: 18px;
+    color: #333; /* texte lisible sur le fond transparent */
+}

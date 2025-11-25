@@ -1,20 +1,19 @@
-<!DOCTYPE htlm>
-<html>
+<html lang="fr">
 <head>
-<lang="fr">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Lorcodex - Codex Lorcana</title>
 <link rel="icon" href="favicon.png">
 
  <link href="style.css" rel="stylesheet" />
+ 
  <style>
   body {
   background-image: url("Lorcanabackground.png");
   background-size: cover;
 }
 </style>
-
 
    </head>
 <body>
@@ -60,7 +59,7 @@
 <style>
 body {
     text-align: center;
-	font-size: 100%;
+	font-size: 125%;
 	
 }
 </style>
@@ -73,7 +72,8 @@ body {
     const images = [
         "carte-promotionnelle-zootopie-2.png",
         "wildsunknown.png",
-        "terresdencres.png"
+		"Winterspell.png",
+        "ldlp.webp",
     ];
 
     let index = 0;
@@ -95,8 +95,24 @@ body {
      style="width: 100%; display: block;">
 
 
-<p style=> Lorcana est un jeu de cartes à collectioner (Trading Card Game) développé par Disney en collaboration de Ravensburger. 
-Pour comprendre le fonctionnement du jeu je vous invite à aller voir la page dédiée ci dessous. </p>
+ <div class="boxcontainer">
+        <div class="box">
+           <p> Lorcana est un jeu de cartes collectioner (Trading Card Game) développé Disney en collaboration de Ravensburger. 
+				Pour comprendre le fonctionnement du jeu je vous invite à aller voir la page dédiée ci dessous. </p>
+				<p> Vous incarnez ici un Illumineur, Gardien du royaume de Lorcana. Vous pourrez jouer des "Glimmers", ce sont des personnages de la licence Disney tels que : Mickey, Olaf, Mushu, Robin des Bois, Kronk, Jasmine, Gaston et bien d'autres, Héros comme Villains...</p>
+				<p> Ces personnages que vous jouez sous forme de cartes ont une couleur qui les définit par ler type de jeu, cette couleur s'appelle une Encre. </p>
+				<p> Il y en a 6 : Ambre, Améyste, Émeraude, Rubis, Saphir et Acier.</p> 
+				<img src="lorcana_encres.webp"  
+     alt="Encres Lorcana" 
+     style="width: 25%; display: block; margin: 25px auto;">
+				<p> Un compteur de Lore (objectif du jeu) est mis à votre disposition pour ordinateur comme pour téléphone </p>
+        </div>
+    </div>
+
+
+
+
+
 
 <iframe width="937" height="536" src="https://www.youtube.com/embed/74nOdRwf92c" title="The Story Begins (Disney Lorcana TCG Teaser)"
  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -119,11 +135,14 @@ Pour comprendre le fonctionnement du jeu je vous invite à aller voir la page d�
 </body>
 
 <footer>
-<img style="width: 20%;" src="lorcanalogo.png" alt="Logo Lorcana">
-<p style="font-size: 120%;">Lorcana est une licence appartenant à ®Ravensburger et ®Disney</p>
-<button style="width: 80%; height: 5%"> <a href="https://www.disneylorcana.com/fr-FR/"> </a> Site Officiel</button>	<!-- Bouton site officiel-->
+    <img style="width: 20%;" src="lorcanalogo.png" alt="Logo Lorcana">
+    <p style="font-size: 120%;">Lorcana est une licence appartenant ®Ravensburger et ®Disney</p>
 
+    <a class="btn-officiel" href="https://www.disneylorcana.com/fr-FR/" target="_blank">
+        Site Officiel
+    </a>
 </footer>
+
 
 
 </html>
